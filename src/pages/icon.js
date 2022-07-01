@@ -24,6 +24,7 @@ export default class App extends Component {
     return (
     <div>
       <Link link='/' text='ホームに戻る' linkStyle={{fontSize: 20}} />
+      <br />
 
       <IconButton onClick={() => this.onClick('うしたぷにきあくん笑')}>
         <ChatIcon />
