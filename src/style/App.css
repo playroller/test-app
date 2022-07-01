@@ -36,9 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.MuiSvgIcon-root {
-  color: blue;
-  width: 50%;
-  height: 50%;
-}
