@@ -7,6 +7,8 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 import './style/icon.css';
 
+import Link from './../components/link';
+
 
 
 export default class App extends Component {
@@ -21,6 +23,8 @@ export default class App extends Component {
   render() {
     return (
     <div>
+      <Link link='/' text='ホームに戻る' linkStyle={{fontSize: 20}} />
+
       <IconButton onClick={() => this.onClick('うしたぷにきあくん笑')}>
         <ChatIcon />
       </IconButton>
