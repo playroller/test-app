@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
-import IconButton from '@mui/material/Button';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import ChatIcon from '@mui/icons-material/Chat';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-
-import './style/App.css';
+import Home from './home';
+import Icon from './icon';
 
 
 
@@ -14,19 +12,14 @@ export default class App extends Component {
     super(props);
   }
 
-  onClick(text) {
-    alert(text);
-  }
-
   render() {
     return (
-    <div>
-      <IconButton onClick={() => this.onClick('うしたぷにきあくん笑')}>
-        <ChatIcon />
-      </IconButton>
-      <IconButton onClick={() => this.onClick('うっくっく')}>
-        <MoreVertIcon />
-      </IconButton>
-    </div>)
-  };
+      <BrowserRouter>
+        <Routes>
+          <Route path={'/'} element={<Home />} />
+          <Route path={'/icon'} element={<Icon />} />
+        </Routes>
+      </BrowserRouter>
+    )
+  }
 }
