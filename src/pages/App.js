@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 import IconButton from '@mui/material/Button';
 
-import AbcIcon from '@mui/icons-material/Abc';
+import ChatIcon from '@mui/icons-material/Chat';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-import './../style/App.css'
+import './../style/App.css';
 
 
 
@@ -13,12 +14,19 @@ export default class App extends Component {
     super(props);
   }
 
-  onClick = () => {
-    alert('うしたぷにきあくん');
+  onClick(text) {
+    alert(text);
   }
 
   render() {
-    return (<IconButton onClick={this.onClick}>
-      <AbcIcon />
-    </IconButton>)};
+    return (
+    <div>
+      <IconButton onClick={() => this.onClick('うしたぷにきあくん笑')}>
+        <ChatIcon />
+      </IconButton>
+      <IconButton onClick={() => this.onClick('うっくっく')}>
+        <MoreVertIcon />
+      </IconButton>
+    </div>)
+  };
 }
