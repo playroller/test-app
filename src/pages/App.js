@@ -5,7 +5,7 @@ import IconButton from '@mui/material/Button';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-import './../style/App.css';
+import './style/App.css';
 
 
 
