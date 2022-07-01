@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 /*
 link: ページへのURL
 text: リンクを表示するときの文字列
-fsize: フォントサイズ
+style: スタイル
  */
-const link = ({link, text, fsize=20}) => {
+const link = (props) => {
   return (
-    <Link to={link} style={{fontSize: {fsize}}}>{text}</Link> 
+    <Link to={props.link} style={props.linkStyle}>{props.text}</Link> 
   );
 }
 
