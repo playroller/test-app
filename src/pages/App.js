@@ -13,8 +13,12 @@ export default class App extends Component {
     super(props);
   }
 
+  onClick = () => {
+    alert('うしたぷにきあくん');
+  }
+
   render() {
-    return (<IconButton>
+    return (<IconButton onClick={this.onClick}>
       <AbcIcon />
     </IconButton>)};
 }
